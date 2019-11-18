@@ -15,6 +15,8 @@ date: 2019-11-18 18:58:39
 
 ---
 
+<!-- more -->
+
 #### 歷史
 
 `Python` 的創始人為 `Guido van Rossum`。在1989年聖誕節期間的阿姆斯特丹，Guido 為了打發聖誕節的無趣，決心開發一個新的腳本解釋程序，作為 ABC 語言的一種繼承。之所以選中 Python（大蟒蛇的意思）作為程序的名字，是因為他是一個 `Monty Python` 的飛行馬戲團的愛好者。
@@ -57,6 +59,6 @@ Guido van Rossum 在 2005 年底成為 Google 公司雇員，該公司將 Python
 ---
 
 資料參考：
-1. {% link https://sls.weco.net/CollectiveNote20/Python/Intro 宅學習 %}
-2. {% asset_link https://www.runoob.com/python/python-tutorial.html [RUNOOB.COM] %}
+1. [宅學習](https://sls.weco.net/CollectiveNote20/Python/Intro)
+2. [RUNOOB.COM](https://www.runoob.com/python/python-tutorial.html)
 3. [Python Crash Course, 1st Edition](https://nostarch.com/pythoncrashcourse2e)
