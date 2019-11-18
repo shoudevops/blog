@@ -2,7 +2,9 @@
 title: Why Python
 categories: Python
 tags: python
+date: 2019-11-18 18:58:39
 ---
+
 ## 為什麼要用Python？
 
 #### 簡介
