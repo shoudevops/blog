@@ -58,3 +58,9 @@ Python 3.5.2
 {% asset_img cmd_python.jpg Python 命令提示字元 %}
 也可以在「開始」功能中搜尋IDLE(Python 3.7 64-bits)：
 {% asset_img pythonIDLE_3_7_5.jpg PythonIDLE %}
+
+---
+
+資料參考：
+1. [RUNOOB.COM](https://www.runoob.com/python/python-tutorial.html)
+2. [Python Crash Course, 1st Edition](https://nostarch.com/pythoncrashcourse2e)
