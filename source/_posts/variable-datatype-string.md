@@ -1,8 +1,10 @@
 ---
 title: 變數和字串
 categories: Python
-tags: python, variable, string
+tags: 'python, variable, string'
+date: 2019-11-21 14:29:04
 ---
+
 ### 變數的名命和使用
 `Python`的變數需要遵守幾項規則，若違反這些規則會引起錯誤發生，而依照規則會使編寫出來的程式碼更易讀易懂。
 1. 變數名稱只能有英文字母、數字和底線。變數名稱可以字母和底線開頭，但不能以數字開頭。
@@ -90,7 +92,7 @@ message = "Hello, " + full_name.title() + "!"
 print(message)
 ```
 
-#### 使用定位符號和換行來增加空白 #
+#### 使用定位符號和換行來增加空白
 在編寫程式的過程中，空白(whitespace)是指不會印出來的各種字元，例如空格、定位符號和換行符號等。
 我們可以利用空白來組織編排輸出的呈現，讓顯示的內容更容易閱讀。
 
@@ -102,7 +104,6 @@ Python
 print("\tPython")
     Python
 ```
-
 若想加入換行符號到字串中，可使用字元連接\n：
 ```python
 print("Languages:\nPython\nC\nJavaScript")
@@ -111,7 +112,6 @@ Python
 C
 JavaScript
 ```
-
 也可以將定位符號和換行符號放在同字串中，`\n\t`會讓字串先換行，然後在新行開頭加入定位符號空白：
 ```python
 print("Languages:\n\tPython\n\tC\n\tJavaScript")
@@ -121,3 +121,61 @@ Languages:
     JavaScript
 ```
 當以很少行的程式碼來產生多行輸出時，定位符號和換行符號會發揮很大功用。
+
+#### 刪除空白
+在程式中多餘的空白可能會引起混亂，`'python'`和`'python '`對程式來說是完全不同的字串，
+`Python`會偵測到`'python '`中的空白，並視這個空白是有其意義的，除非告知它並不是這麼一回事。
+
+`Python`能找出某個字串中其左、右側是否有多的空白，可以使用`strip()`方法。
+要找出字串中其`左側`是否有多的空白，可以使用`lstrip()`方法。
+要找出字串中其`右側`是否有多的空白，可以使用`rstrip()`方法。
+```python
+>>> favorite_language = ' python '
+>>> favorite_language
+' python '
+>>> favorite_language.strip()
+'python'
+>>> favorite_language.rstrip()
+' python'
+>>> favorite_language.lstrip()
+'python '
+>>> favorite_language
+' python '
+```
+不過`strip()`、`rstrip()`、`lstrip()`只是暫時刪除而已，
+接著再輸入`favorite_language`要求`Python`顯示其值時，會發現此字串和當初輸入時是一樣的。
+
+要永久刪掉字串的空白，則要把刪除空白後的字串再指定存回變數中：
+```python
+>>> favorite_language = ' python '
+>>> favorite_language = favorite_language.strip()
+>>> favorite_language
+'python'
+```
+在編寫和設計程式的過程中，修改變數的值並將新的值指定存回原本的變數中是很常見的處理，
+這就是為什麼變數中存放的值會隨著程式的執行或使用者的回應而產生變化。
+在實際的應用中，這些刪除函式最常用來處理使用者的輸入，在刪除整理好輸入的內容後才儲存起來。
+
+#### 字串的使用要避免產生語法錯誤
+語法錯誤(syntax error)是一種很常會碰到的錯誤，
+當`Python`沒辦法識別程式中所含有的不合法程式碼時，就會告知有語法錯誤的發生。
+```python
+message = "One of Python's strengths is its diverse community."
+print(message)
+
+One of Python's strengths is its diverse community.
+```
+字串中的單引號是放在兩個雙引號之間，因此Python直譯器能正確識別這是字串的一部份。
+
+```python
+message = 'One of Python's strengths is its diverse community.'
+print(message)
+
+  File "syntax_error.py", line 1
+    message = 'One of Python's strengths is its diverse community.'
+                             ^
+SyntaxError: invalid syntax
+```
+如果改用單引號來括住字串，則`Python`就無法正確識別字串結尾的位置
+在輸出中會看到錯誤在第2個單引號的位置上，
+這個SyntaxError指出直譯器無法識別程式中的某些不合法程式碼。
