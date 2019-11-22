@@ -8,6 +8,9 @@ tags: python, data type, comment
 大致描述程式解決問題的方法。
 
 ### 如何編寫注釋
+
+<!-- more -->
+
 `Python`中，井字符號(#)標識出注釋的內容，井字符號後面的內容都會被`Python` 直譯器忽略：
 ```python
 # Say hello to everyone.
