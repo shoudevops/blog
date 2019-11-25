@@ -247,3 +247,114 @@ print(motorcycles)
 print("\nA " + too_expensive.title() + " is too expensive for me.")
 ```
 把'ducati'值指定存放到 too_expensive 變數內，接著用這個變數來告知`Python`要從串列中刪除這個值。
+
+### 組織串列
+`Python` 提供幾個可以組織和調整串列的方式，可依不同情況來使用。
+
+#### 使用 sort()方法對串列永久性改變排列順序
+`Python` 的 sort()方法可對串列進行排序：
+```python
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+```
+執行後 cars串列會依字母順序排列，且不能回覆到原來的排列順序：
+```text
+['audi', 'bmw', 'subaru', 'toyota']
+```
+只要在 sort()方法中傳入`reverse=True`參數，也能依字母相反順序來排列串列中的項目：
+```python
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort(reverse=True)
+print(cars)
+```
+串列的項目已永久性變更了順序：
+```text
+['toyota', 'subaru', 'bmw', 'audi']
+```
+
+#### 使用 sorted()函式對串列暫時性改變排列順序
+若要保留原本的排列順序，但在顯現時是以特定的排序呈現，可用 sorted()函式。
+此函式能依照特定排序來顯示串列的項目內容，但不影響串列中原本來排列順序。
+```python
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+
+print("Here is the original list:")
+print(cars)
+
+print("\nHere is the sorted list:")
+print(sorted(cars))
+
+print("\nHere is the original list again:")
+print(cars)
+```
+改變順序顯示後，串列的項目還是以原本順序排列：
+```text
+Here is the original list:
+['bmw', 'audi', 'toyota', 'subaru']
+
+Here is the sorted list:
+['audi', 'bmw', 'subaru', 'toyota']
+
+Here is the original list again:
+['bmw', 'audi', 'toyota', 'subaru']
+```
+如果想要按字母反序顯示串列的項目，可在sorted()函式傳入 `reverse=True`參數。
+
+#### 反序印出串列
+若要反轉串列項目原本的順序，可使用reverse()方法：
+```python
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+
+cars.reverse()
+print(cars)
+```
+請注意一點，reverse()並不是指按字母反序排列串列項目，只是簡單的反轉串列項目的排列順序。
+```text
+['bmw', 'audi', 'toyota', 'subaru']
+['subaru', 'toyota', 'audi', 'bmw']
+```
+reverse()方法會永久性改變串列中項目的排列順序，但可以隨時再反轉回來，只要再對串列套用`reverse()`即可。
+
+#### 找出串列的長度
+藉由使用 len()函式能快速找出串列的長度：
+```python
+>>> cars = ['bmw', 'audi', 'toyota', 'subaru']
+>>> len(cars)
+4
+```
+
+### 使用串列時避免 IndexError
+這是在剛開始使用串列時常會遇到的一種錯誤。
+假設串列內含三個項目，但使用者卻要求了第四個項目：
+```python
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles[3])
+```
+執行結果會是索引錯誤：
+```text
+Traceback (most recent call last):
+  File "syntax_error.py", line 2, in <module>
+    print(motorcycles[3])
+IndexError: list index out of range
+```
+大家常把串列第三個項目的索引足標想成是3，但`Python` 的串列第三個項目的索引足標為2，要從0開始算起才正確。
+
+當需要存取串列最後一個項目時，可使用 `-1` 來當索引足標：
+```python
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles[-1])
+```
+只有在串列是空的時候，使用 `-1`來存取最後一個項目會產生錯誤：
+```python
+motorcycles = []
+print(motorcycles[-1])
+```
+motorcycles 串列是空的，沒有任何項目在其中，因此`Python`會返回索引錯誤的訊息：
+```text
+Traceback (most recent call last):
+  File "syntax_error.py", line 2, in <module>
+    print(motorcycles[-1])
+IndexError: list index out of range
+```
