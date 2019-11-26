@@ -50,7 +50,7 @@ Carolina, that was a great trick!
 ```
 之後想在 for 迴圈中放多少行程式碼都可以，在 for magician in magicians 這行程式之後，
 每行縮排的程式碼都算在迴圈之內，且都會對串列中每個項目執行一次。
-
+test
 
 #### for 迴圖結束後的處理
 
