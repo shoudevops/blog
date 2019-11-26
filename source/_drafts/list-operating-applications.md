@@ -50,7 +50,13 @@ Carolina, that was a great trick!
 ```
 之後想在 for 迴圈中放多少行程式碼都可以，在 for magician in magicians 這行程式之後，
 每行縮排的程式碼都算在迴圈之內，且都會對串列中每個項目執行一次。
-test
+接著可以新增第二行程式碼輸出另一條訊息：
+```python
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician.title() + ", that was a great trick!")
+    print("I can't wait to see your next trick, " + magician.title() + ".\n")
+```
 
 #### for 迴圖結束後的處理
 
