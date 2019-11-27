@@ -4,7 +4,6 @@ categories: Python
 tags: 'python, data type, comment'
 date: 2019-11-23 21:42:45
 ---
-
 在程式語言中「注釋」都是很有用的功能。
 隨著程式愈來愈長、愈來愈複雜，就需要在程式碼中加上說明註釋，
 大致描述程式解決問題的方法。
@@ -22,6 +21,8 @@ print("Hello Python people!")
 ```text
 Hello Python people!
 ```
+
+---
 
 ### 要寫出什麼樣的注釋
 編寫注釋的主要理由是用來解釋程式碼是要做什麼的，並說明是怎麼讓它運作的。
