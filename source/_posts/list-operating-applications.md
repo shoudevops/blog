@@ -1,5 +1,5 @@
 ---
-title: 串列的操作與運用
+title: 串列的操作與運用 Part I.
 categories: Python
 tags: 'python, list'
 date: 2019-11-28 01:17:58
