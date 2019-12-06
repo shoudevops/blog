@@ -1,5 +1,5 @@
 ---
-title: 使用者使入
+title: 使用者輸入
 categories: Python
 tags: python, input
 ---
