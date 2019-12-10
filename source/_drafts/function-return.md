@@ -4,6 +4,7 @@ categories: Python
 tags: 
 - python
 - function
+- return
 ---
 ### 返回值
 函式也可以高一些資訊並返回一個或一組值。函式返回的值稱之為「**返回值（ return value ）**」。
