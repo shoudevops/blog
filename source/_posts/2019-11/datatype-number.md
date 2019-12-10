@@ -1,7 +1,10 @@
 ---
 title: 數值
 categories: Python
-tags: 'python, datatype, number'
+tags:
+- python
+- datatype
+- number
 date: 2019-11-22 09:05:29
 ---
 在程式設計中很常使用「數值」來記錄遊戲的分數、呈現視覺化的資料、儲存Web 應用程式的資訊等。

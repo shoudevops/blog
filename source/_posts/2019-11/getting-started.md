@@ -1,7 +1,9 @@
 ---
 title: Python 入門
 categories: Python
-tags: 'python, installed'
+tags:
+- python
+- installed
 date: 2019-11-20 11:23:24
 ---
 這裡將會介紹`Python` 的安裝與文字編輯器，並且執行第一支程式：`hello_world.py`

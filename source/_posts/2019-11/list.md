@@ -1,7 +1,9 @@
 ---
 title: 串列簡介
 categories: Python
-tags: 'python, list'
+tags:
+- python
+- list
 date: 2019-11-25 15:21:42
 ---
 ### 什麼是串列？

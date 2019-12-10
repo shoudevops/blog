@@ -1,7 +1,11 @@
 ---
 title: 串列的操作與運用 Part II.
 categories: Python
-tags: 'python, number, slice, tuple'
+tags: 
+- python
+- number
+- slice
+- tuple
 date: 2019-11-29 11:00:53
 ---
 

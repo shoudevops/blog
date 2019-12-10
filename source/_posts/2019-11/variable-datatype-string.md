@@ -1,7 +1,10 @@
 ---
 title: 變數和字串
 categories: Python
-tags: 'python, variable, string'
+tags: 
+- python
+- variable
+- string
 date: 2019-11-21 14:29:04
 ---
 ### 變數的名命和使用

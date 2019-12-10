@@ -1,7 +1,10 @@
 ---
 title: 注釋
 categories: Python
-tags: 'python, data type, comment'
+tags:
+- python
+- data type
+- comment
 date: 2019-11-23 21:42:45
 ---
 在程式語言中「注釋」都是很有用的功能。
