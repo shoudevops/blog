@@ -1,7 +1,10 @@
 ---
 title: 字典 Part II.
 categories: Python
-tags: 'python, dictionary, loop'
+tags:
+- python
+- dictionary
+- loop
 date: 2019-12-05 17:11:46
 ---
 

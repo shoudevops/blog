@@ -1,7 +1,10 @@
 ---
 title: if 陳述句 － 條件檢測
 categories: Python
-tags: 'python, conditional test, if'
+tags:
+- python
+- conditional test
+- if
 date: 2019-12-02 10:06:57
 ---
 

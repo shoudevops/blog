@@ -1,7 +1,9 @@
 ---
 title: 函式 Part I.
 categories: Python
-tags: 'python, function'
+tags:
+- python
+- function
 date: 2019-12-10 15:30:53
 ---
 

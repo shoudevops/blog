@@ -1,7 +1,9 @@
 ---
 title: 字典 Part I.
 categories: Python
-tags: 'python, dictionary'
+tags:
+- python
+- dictionary
 date: 2019-12-04 19:04:25
 ---
 

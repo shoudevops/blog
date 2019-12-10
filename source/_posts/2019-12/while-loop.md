@@ -1,7 +1,9 @@
 ---
 title: while 迴圈
 categories: Python
-tags: 'python, while'
+tags:
+- python
+- while
 date: 2019-12-09 17:35:05
 ---
 

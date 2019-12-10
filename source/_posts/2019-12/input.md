@@ -1,7 +1,9 @@
 ---
 title: 使用者輸入
 categories: Python
-tags: 'python, input'
+tags:
+- python
+- input
 date: 2019-12-08 09:47:10
 ---
 

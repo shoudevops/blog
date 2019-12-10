@@ -1,7 +1,9 @@
 ---
 title: if 陳述句
 categories: Python
-tags: 'python, if'
+tags:
+- python
+- if
 date: 2019-12-03 18:09:36
 ---
 

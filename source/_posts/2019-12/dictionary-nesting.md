@@ -1,7 +1,10 @@
 ---
 title: 字典 Part III.
 categories: Python
-tags: 'python, dictionary, nesting'
+tags:
+- python
+- dictionary
+- nesting
 date: 2019-12-06 10:22:39
 ---
 
