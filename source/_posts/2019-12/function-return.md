@@ -1,11 +1,13 @@
 ---
 title: 函式 Part II.
 categories: Python
-tags: 
-- python
-- function
-- return
+tags:
+  - python
+  - function
+  - return
+date: 2019-12-11 09:23:35
 ---
+
 ### 返回值
 函式也可以高一些資訊並返回一個或一組值。函式返回的值稱之為「**返回值（ return value ）**」。
 在函式中可以用 return 陳述句把值返回到呼叫函式的那行程式碼中。
