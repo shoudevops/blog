@@ -2,10 +2,12 @@
 title: 函式 Part III.
 categories: Python
 tags:
-- python
-- function
-- list
+  - python
+  - function
+  - list
+date: 2019-12-12 09:15:11
 ---
+
 ### 傳入串列
 函式傳入串列是很好用的功能，把串列傳入函式後，函式就能直接存取其內容。
 
