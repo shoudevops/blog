@@ -1,5 +1,5 @@
 ---
-title: 函式 Part IV.
+title: 函式 － 模組化應用
 categories: Python
 tags:
 - Python

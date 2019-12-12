@@ -1,5 +1,5 @@
 ---
-title: 函式 Part III.
+title: 函式 － 串列應用與任意數量的引數
 categories: Python
 tags:
   - python

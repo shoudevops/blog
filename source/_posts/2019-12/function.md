@@ -1,5 +1,5 @@
 ---
-title: 函式 Part I.
+title: 函式 － 定義與傳入引數
 categories: Python
 tags:
 - python
