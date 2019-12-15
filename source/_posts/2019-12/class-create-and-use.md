@@ -2,9 +2,11 @@
 title: 類別 － 建立類別和實例的運用
 categories: Python
 tags:
-- python
-- class
+  - python
+  - class
+date: 2019-12-15 11:08:54
 ---
+
 物件導向程式設計（ Object-oriented programming ）是編寫應用軟體最有效率的方法之一。
 在物件導向程式設計中，我們設計編寫出類別（ class ），用來代表現實世界的各種事物和情景，並以這些類別為基礎來建立物件。
 從類別建立物件的過程稱之為例示或實例化（ instantiation ），這樣就能運用類別的實例（ instance ）。
