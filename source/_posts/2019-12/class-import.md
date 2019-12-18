@@ -2,9 +2,11 @@
 title: 類別 － 匯入類別
 categories: Python
 tags:
-- python
-- class
+  - python
+  - class
+date: 2019-12-18 10:15:39
 ---
+
 ### 匯入類別
 隨著不斷為類別新增功能，程式檔會變得愈來愈長，就算已使用繼承功能也是如此。
 為遵循 `Python` 的設計理念，檔案要盡量維持簡潔乾淨。
