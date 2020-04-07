@@ -14,7 +14,12 @@ Ubuntu 下載位置：[https://www.ubuntu-tw.org/modules/tinyd0/](https://www.ub
 
 ### Linux Kernel 版號
 
-
+透過以下指令可以查看Linux Kernel的版號
+```
+uname -r
+```
+> 4.4.0-142-generic
+主版本.次版本.釋出版本-修改版本
 
 ### Ubuntu 版號
 
