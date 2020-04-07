@@ -2,7 +2,9 @@
 title: Linux 安裝
 categories: Linux
 tags: linux
+date: 2020-04-07 17:38:41
 ---
+
 介紹安裝步驟時會以 **Ubuntu 16.04 LTS 伺服器版本** 進行，並以VMWare虛擬機示範安裝，有興趣也可以使用最新版本進行安裝練習，觀念上都是相同的。
 
 Ubuntu 下載位置：[https://www.ubuntu-tw.org/modules/tinyd0/](https://www.ubuntu-tw.org/modules/tinyd0/)
