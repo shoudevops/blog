@@ -1,10 +1,12 @@
 ---
 title: Linux 網路設定
 categories: Linux
-tags: 
-- linux
-- networking
+tags:
+  - linux
+  - networking
+date: 2020-04-14 15:30:19
 ---
+
 以上一篇安裝的Ubuntu 16.04 LTS為例，說明作業系統安裝完成後，如何設定網路
 
 ### 查詢目前網路卡與網路資訊
