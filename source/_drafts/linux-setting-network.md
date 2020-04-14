@@ -72,3 +72,50 @@ sudo ip addr flush ens33    ->  網路卡名稱要記得修改哦
 
 如果我們跟 Ubuntu 16.04 一樣開啟 /etc/network/interfaces 的檔案，會看到：
 {% asset_img networking-18-interfaces.jpg 查看interfaces檔案 %}
+
+> ifupdown has been replaced by netplan(5) on this system. See /etc/netplan for current configuration.
+
+安裝系統時如果有使用到網路，在 `/etc/netplan/`目錄下就應該會有基本的設定檔，
+若完全沒有設定檔，可以使用以下指令自動產生預設的設定檔：
+```
+sudo netplan generate
+```
+
+開啟 /etc/netplan/50-cloud-init.yaml 設定檔（或其它設定檔），將相關資訊填入
+```
+network:
+    ethernets:
+        ens33:
+            addresses: [192.168.246.188/24]  ->  IP 位址與網路遮罩
+            gateway4: 192.168.246.2
+            nameservers:
+                addresses: [168.95.1.1, 8.8.8.8]
+            dhcp4: no
+    version: 2
+```
+修改並存檔後輸入以下指令：
+```
+sudo netplan try
+```
+執行後會檢查設定檔格式，如果正確的話就會套用，並在120秒以後自動還原設定（如果設錯了在兩分鐘後會還原）！
+在120秒按`ENTER`之後就會使用新的設定檔內容了！
+也能在120秒以後輸入以下指令套用
+```
+sudo netplan apply
+```
+再來查看設定是否生效：
+{% asset_img networking-netplan-apply.jpg 查看網路介面設定 %}
+
+---
+
+### 檢查網路是否可以連線
+
+網路介面都設定完成後，要如何驗證是否可以正確的連線到Internet呢？
+最簡單的方式就是`ping`一個不在同網段內的位址測試有沒有回應：
+```
+ping 8.8.8.8
+```
+ping看看Google的DNS Server會不會有回應
+{% asset_img networking-ping.jpg Ping Google DNS Server %}
+
+可以看到Google DNS Server有回應，這樣就可以正常的連線到Internet囉！
