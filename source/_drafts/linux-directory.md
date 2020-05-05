@@ -126,7 +126,7 @@ FHS也定義出根目錄(/)底下應該要有哪些次目錄的存在才好，�
         </td>
     </tr>
     <tr>
-        <td>/lib<qual></td>
+        <td>/lib&lt;qual&gt;</td>
         <td>存放與 /lib 不同格式的二進位函式庫</td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@ FHS針對根目錄定義的標準就是上面表格的內容，不過Linux底下
 /usr 裡面放置的資料屬於可分享的與不可變動的
 **usr是`Unix Software Resource`的縮寫**，是「Unix 作業系統軟體資源」所放置的目錄
 FHS 建議所有的軟體開發者，應該將資料合理的分別放置到這個目錄下的次目錄，而不要自行建立該軟體獨立的目錄
-這個目錄有點類似 Windows系統的「C:\Windows\(其中的一部份) + C:\Program files\」這兩個目錄的綜合體
+這個目錄有點類似 Windows系統的「`C:\Windows\(其中的一部份)` + `C:\Program files\`」這兩個目錄的綜合體
 系統剛安裝好時，這個目錄會佔用最多的硬碟容量
 一般來說，/usr的次目錄建議有底下這些：
 
@@ -161,6 +161,48 @@ FHS 建議所有的軟體開發者，應該將資料合理的分別放置到這�
     <tr><td colspan="2">第一部份：FHS 要求必須要存在的目錄</td></tr>
     <tr>
         <td>/usr/bin</td>
-        <td>放置一般用戶能使用的指令</td>
+        <td>Ubuntu：放置一些非必要性的指令，主要是一些第三方協力軟體的執行程式<br />CentOS 7~：全部的使用者指令都放置於此目錄，並使用連結檔的方式將 /bin 連結到此目錄</td>
+    </tr>
+    <tr>
+        <td>/usr/lib</td>
+        <td>Ubuntu：用來放置 /usr/bin 的程式會用到的函式庫<br />CentOS 7~：基本上與 /lib 功能相同，所以 /lib 就是連結到此目錄中的</td>
+    </tr>
+    <tr>
+        <td>/usr/local</td>
+        <td>系統管理員在本機自行安裝自已下載的軟體（非Distribution預設提供者），建議安裝到此目錄比較便於管理</td>
+    </tr>
+    <tr>
+        <td>/usr/sbin</td>
+        <td>Ubuntu：放置一些使用者安裝的系統管理的必要程式，例如：dhcpd, httpd等<br />CentOS 7~：非系統正常運作所需要的系統指令，基本功能與/sbin差不多，</td>
+    </tr>
+    <tr>
+        <td>/usr/share</td>
+        <td>主要放置唯讀架構的資料檔案，幾乎是不分硬體架構均可讀取的資料，因為幾乎都是文字檔案<br />此目錄下常見的還有這些次目錄：
+        <ul>
+            <li>/usr/share/man：線上說明文件</li>
+            <li>/usr/share/doc：軟體雜項的文件說明</li>
+            <li>/usr/share/zoneinfo：與時區有關的時區檔案</li>
+        </ul></td>
+    </tr>
+    <tr><td colspan="2">第二部份：FHS 建議可以存在的目錄</td></tr>
+    <tr>
+        <td>/usr/games/</td>
+        <td>與遊戲比較相關的資料放置處</td>
+    </tr>
+    <tr>
+        <td>/usr/include/</td>
+        <td>C/ C++等程式語言的檔頭(header)與包含檔(include)放置處<br /></td>
+    </tr>
+    <tr>
+        <td>/usr/libexec/</td>
+        <td>放置某些不被一般使用者慣用的執行檔或腳本(script)等，例如大部份的 X視窗底下的操作指令</td>
+    </tr>
+    <tr>
+        <td>/usr/lib&lt;qual&gt;</td>
+        <td>與 /lib&lt;qual&gt; 功能相同，/lib&lt;qual&gt; 就是連結到此目錄中</td>
+    </tr>
+    <tr>
+        <td>/usr/src</td>
+        <td>一般原始碼放置的位置，src有source的意思。核心原始碼建議放置到 /usr/src/linux/ 目錄下</td>
     </tr>
 </table>
