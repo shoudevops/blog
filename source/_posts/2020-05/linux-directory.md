@@ -1,8 +1,8 @@
 ---
 title: Linux 目錄配置
 date: 2020-05-05 14:40:45
-categories:
-tags:
+categories: Linux
+tags: linux
 ---
 
 為了讓使用者可以瞭解到已安裝較體通常放置於哪個目錄下，因此有了`Filesystem Hierarchy Standard(FHS)`標準的出現。
