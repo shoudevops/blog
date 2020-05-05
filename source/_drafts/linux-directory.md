@@ -206,3 +206,52 @@ FHS 建議所有的軟體開發者，應該將資料合理的分別放置到這�
         <td>一般原始碼放置的位置，src有source的意思。核心原始碼建議放置到 /usr/src/linux/ 目錄下</td>
     </tr>
 </table>
+
+---
+
+### /var 的意義與內容
+/usr 是安裝時會佔用較大硬碟容量的目錄，/var 是系統運作後會漸漸佔用硬碟容量的目錄
+因為 /var目錄主要針對常性變動的檔案，包括快取(cache)、登錄檔(log file)及某些軟體運作所產生的檔案
+包括程序檔案(lock file, run file)，或者例如MySQL資料庫的檔案等
+當見的次目錄有：
+<table>
+    <tr>
+        <th>目錄</th>
+        <th>應放置檔案內容</th>
+    </tr>
+    <tr><td colspan="2">第一部份：FHS 要求必須要存在的目錄</td></tr>
+    <tr>
+        <td>/var/cache/</td>
+        <td>應用程式本身運作過程中會產生的一些暫存檔</td>
+    </tr>
+    <tr>
+        <td>/var/lib/</td>
+        <td>程式本身執行的過程中，需要使用到的資料檔案放置的目錄。在此目錄下各自的軟體應該要有各自的目錄<br />例如 MySQL的資料庫放置到 /var/lib/mysql，而 rpm的資料庫則放到 /var/lib/rpm</td>
+    </tr>
+    <tr>
+        <td>/var/lock/</td>
+        <td>某些裝置或檔案資源，一次只能被一個應用程式使用，如果同時有兩個程式使用該裝置時就會產生錯誤，因此就要將該裝置上鎖(lock)，確保該裝置只會給單一軟體使用。<br />目前此目錄也已經移到 /run/lock中</td>
+    </tr>
+    <tr>
+        <td>/var/log</td>
+        <td>登錄檔放置的目錄，比較重要的檔案如 /var/log/messages, /var/log/wtmp(紀錄登入者的資訊)等</td>
+    </tr>
+    <tr>
+        <td>/var/mail</td>
+        <td>放置個人電子郵件的目錄，此目錄也被放置到 /var/spool/mail 目錄中，通常這兩個目錄是互為連結檔</td>
+    </tr>
+    <tr>
+        <td>/var/run</td>
+        <td>某些服務或程式啟動後，會將它們的 PID放置在這個目錄下。<br />與 /run 相同，這個目錄連結到 /run </td>
+    </tr>
+    <tr>
+        <td>/var/spool</td>
+        <td>通常放置一些佇列資料（「佇列」就是排隊等待其它程式使用的資料），這些資料被使用後通常都會被刪除<br />如果是工作排程資料(crontab)，就會被放置到 /var/spool/cron/ 目錄中</td>
+    </tr>
+</table>
+
+---
+
+### 針對 FHS，各家Distributions的差異
+由於 FHS僅是定義出最上層(/)與次層(/usr, /var)的目錄內容應該要放置的檔案或目錄資料
+因此，在其它次目錄層級內，就可以隨開發者自行配置，但記住大致的 FHS標準，差異性其實有限
