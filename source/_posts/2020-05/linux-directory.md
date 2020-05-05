@@ -1,5 +1,5 @@
 ---
-title: Linux 目錄
+title: Linux 目錄配置
 date: 2020-05-05 14:40:45
 categories:
 tags:
