@@ -1,13 +1,15 @@
 ---
 title: Windows Subsystem for Linux(WSL) 環境配置
 categories:
-- Windows
-- WSL
+  - Windows
+  - WSL
 tags:
-- linux
-- windows
-- wsl
+  - linux
+  - windows
+  - wsl
+date: 2020-07-31 15:32:53
 ---
+
 原先在尋找Windows 有什麼好用的Terminal 軟體，就找到了WSL ，一個能直接在Windows 上使用Linux 指令操作系統。
 本篇文章簡單紀錄如何配置WSL 環境，後續會在其它文件針對好用的工具進行說明。
 
