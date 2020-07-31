@@ -1,7 +1,9 @@
 ---
 title: PostgreSQL for Docker
 categories: PostgreSQL
-tags: 'postgresql, database'
+tags:
+- postgresql
+- database
 date: 2020-07-30 17:17:35
 ---
 
