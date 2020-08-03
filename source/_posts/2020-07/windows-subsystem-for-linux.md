@@ -1,8 +1,6 @@
 ---
 title: Windows Subsystem for Linux(WSL) 環境配置
-categories:
-  - Windows
-  - WSL
+categories: Windows
 tags:
   - linux
   - windows
