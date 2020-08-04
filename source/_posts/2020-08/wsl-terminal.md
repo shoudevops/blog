@@ -2,9 +2,11 @@
 title: Windows Terminal 搭配WSL
 categories: Windows
 tags:
-- windows
-- wsl
+  - windows
+  - wsl
+date: 2020-08-04 16:07:10
 ---
+
 Windows 內建的終端機軟體除了`命令提示字元(command prompt)`、`PowerShell`以外，
 現在多了新的選擇：**`Windows Terminal`**
 Windows Terminal 有命令提示字元與PowerShell 的Shell 層可以選擇，
