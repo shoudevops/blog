@@ -67,7 +67,7 @@ wsl -l
 ```
 wsl
 ```
-用`uname -a` 指令驗證是不是已經進到WSL
+用`lsb_release -dc` 指令驗證是不是已經進到WSL
 {% asset_img windows-terminal-into-wsl.jpg Into WSL %}
 
 ### 配置好用的Terminal 工具與介面
