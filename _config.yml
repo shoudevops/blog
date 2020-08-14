@@ -98,3 +98,4 @@ deploy:
   type: git
   repo: git@github.com:shoudevops/shoudevops.github.io.git
   branch: master
+
