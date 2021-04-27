@@ -2,7 +2,9 @@
 title: 讓Ubuntu-20.04 介面像Mac OS
 categories: Linux
 tags: linux
+date: 2021-04-27 15:12:01
 ---
+
 
 Ubuntu 是Linux發行版中好用的桌面版本之一，
 本文章會說明如何自訂Ubuntu 20.04，讓它看起看像是Mac OS，
