@@ -2,7 +2,9 @@
 title: 如何在Ubuntu-20.04 安裝Windows Line
 categories: Linux
 tags: linux
+date: 2021-05-04 08:57:18
 ---
+
 Line 通訊軟體目前除了在手機的雙平台中使用，也可以在Windows、Mac OS 和Chrome 系統上執行。
 若要在Ubuntu 上使用電腦版Line 的作法，最方便的作法是用Chomre 瀏覽器的擴充功能達成，
 但只有文字訊息的功能，無法使用像是`記事本`、`相簿`…等功能。
