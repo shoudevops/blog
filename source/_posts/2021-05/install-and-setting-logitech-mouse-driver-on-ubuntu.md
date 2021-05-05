@@ -2,7 +2,9 @@
 title: Ubuntu-20.04 安裝與設定Logitech Driver
 categories: Linux
 tags: linux
+date: 2021-05-05 18:18:52
 ---
+
 在Windows/ MacOS 用過Logitech Option，
 對它在工作上的幫助跟實用性印象深刻，
 可以自訂義按鈕的功能，也可以設定手勢操作。
