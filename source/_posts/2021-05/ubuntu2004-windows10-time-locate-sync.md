@@ -29,9 +29,15 @@ Asia/Taipei 的時區是+08：00 ，所以設定好Unix/Linux/Mac OS 的時間�
 
 1. 讓Ubuntu-20.04 自動向`NTP Server(Network Time Protocol)` 取得正確的時間
 
-    ```command
-    sudo apt-get install ntpdate
-    sudo ntpdate time.windows.com
-    ```
+  ```command
+  sudo apt-get install ntpdate
+  sudo ntpdate time.windows.com
+  ```
 
 2. 讓Ubuntu-20.04 將正確的時間寫到`Hardware Clock`，讓Windows 10 可以從`Hardware Clock` 讀到正確的時間。
+
+  ```command
+  sudo hwclock --localtime --systohc
+  ```
+
+再重啟進到Winodws 10，會看到時間是正確的。
