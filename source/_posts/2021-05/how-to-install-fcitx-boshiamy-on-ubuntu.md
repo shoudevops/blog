@@ -2,7 +2,9 @@
 title: Ubuntu-20.04 安裝嘸蝦米輸入法
 categories: Linux
 tags: linux
+date: 2021-05-10 16:07:24
 ---
+
 Ubuntu-20.04 安裝fcitx 嘸蝦米
 
 分別需要安裝fcitx 系統與嘸蝦米的table
