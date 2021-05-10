@@ -26,6 +26,7 @@ Line 通訊軟體目前除了在手機的雙平台中使用，也可以在Window
 wget https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
+sudo apt-get install --install-recommends winehq-stable
 ```
 
 #### 初始設定
