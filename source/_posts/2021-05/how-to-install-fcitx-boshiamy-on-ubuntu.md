@@ -1,5 +1,5 @@
 ---
-title: Ubuntu-20.04 安裝嘸蝦米輸入法
+title: Ubuntu-20.04 安裝Fcitx 嘸蝦米輸入法
 categories: Linux
 tags: linux
 date: 2021-05-10 16:07:24
