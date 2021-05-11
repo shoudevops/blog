@@ -2,7 +2,9 @@
 title: Ubuntu-20.04 安裝Fcitx 新酷音
 categories: Linux
 tags: linux
+date: 2021-05-11 08:46:31
 ---
+
 
 Ubuntu-20.04 安裝Fcitx 新酷音輸入法
 
