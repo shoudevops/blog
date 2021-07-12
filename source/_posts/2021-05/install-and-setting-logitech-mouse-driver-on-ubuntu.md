@@ -104,8 +104,8 @@ devices: (
     smartshift:
     {
         on: true; # Smartshift 功能開啟
-        threshold: 15; 觸發閾值
-        default_threshold: 30; 預設閾值
+        threshold: 15; # 觸發閾值
+        default_threshold: 30; # 預設閾值
     };
     hiresscroll: # HiRes(高解析) 滾輪
     {
@@ -186,6 +186,74 @@ devices: (
             };
         }
     );
+},
+{
+  name: "M720 Triathlon Multi-Device Mouse";
+  hiresscroll:
+    {
+        hires: true;
+        invert: false;
+        target: false;
+    };
+    dpi: 1000;
+    buttons: (
+      {
+        cid: 0xd0;
+        action = 
+        {
+          type: "Gestures";
+          gestures: (
+            {
+              direction: "Up";
+              threshold: 7;
+              mode: "OnRelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT",  "KEY_UP"];
+              };
+            },
+            {
+              direction: "Down";
+              threshold: 7;
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT", "KEY_DOWN"];
+              };
+            },
+            {
+              direction: "Left";
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT", "KEY_LEFT"];
+              };
+            },
+            {
+              direction: "Right";
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT", "KEY_RIGHT"];
+              };
+            },
+            {
+              direction: "None";
+              mode: "OnRelease";
+              action = 
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTMETA"];
+              };
+            }
+          )
+        }
+      }
+    )
 }
 );
 ```
