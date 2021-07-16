@@ -68,7 +68,7 @@ Description=Logitech Configuration Daemon
 
 [Service]
 Type=simple
-ExecStart=/bin/logid -c /etc/logid.cfg
+ExecStart=/usr/local/bin/logid -c /etc/logid.cfg
 User=root
 #ExecReload=/bin/kill -HUP $MAINPID
 
@@ -93,7 +93,7 @@ sudo vim /etc/logid.cfg
 
 5. Configure the driver file
 
-以下設定內容是針對`MX Master 2S`的設定，
+以下設定內容是針對`MX Master 2S`, `M720 Triathlon`的設定，
 設備完整的名稱可參考上述的`相容設備清單`
 
 ```cfg
