@@ -84,7 +84,7 @@ autoload -U compinit && compinit
 source ~/.zshrc
 ```
 
-## Linux Homebrew
+## Homebrew for Linux
 
 * 參考[官方文件](https://brew.sh/)
 
@@ -229,4 +229,20 @@ sudo apt-get install -y nodejs
 
 ```shell
 npm install -g hexo-cli
+```
+
+### Terraform CLI
+
+* 如果已經安裝好`Homebrew for Linux`
+
+```shell
+brew install terraform
+```
+
+### K9S
+
+* 如果已經安裝好`Homebrew for Linux`
+
+```shell
+brew install k9s
 ```
