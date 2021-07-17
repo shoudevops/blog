@@ -2,7 +2,9 @@
 title: ZSH 配置與好用的工具
 categories: Linux
 tags: linux
+date: 2021-07-17 15:13:24
 ---
+
 先前的文章有介紹如何在`Windows WSL` 內安裝`Oh My Zsh` 與`Powerlevel10k`，
 還沒設定的請移步到[Windows Terminal 搭配WSL](https://shoudevops.github.io/Windows/wsl-terminal/)
 
