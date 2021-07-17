@@ -10,6 +10,8 @@ date: 2021-07-17 15:13:24
 
 這裡會再延伸說明`Oh My Zsh` 下有什麼方便好用的工具
 
+<!-- more -->
+
 ## ZSH-Autosuggestions
 
 * 參考[官方文件](https://github.com/zsh-users/zsh-autosuggestions)
