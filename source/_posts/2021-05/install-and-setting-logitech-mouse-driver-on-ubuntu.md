@@ -258,6 +258,85 @@ devices: (
 );
 ```
 
+# MX Anywhere 3
+```cfg
+devices: (
+{
+  name: "MX Anywhere 3";
+  smartshift:
+    {
+      on: true;
+      threshold: 15;
+      default_threshold: 30;
+    };
+  hiresscroll:
+    {
+        hires: true;
+        invert: false;
+        target: true;
+        up: {
+            mode: "Axis";
+            axis: "REL_WHEEL_HI_RES";
+            axis_multiplier: 3;
+        },
+        down: {
+            mode: "Axis";
+            axis: "REL_WHEEL_HI_RES";
+            axis_multiplier: -3;
+        }
+    };
+    dpi: 1000;
+    buttons: (
+      {
+        cid: 0xc4;
+        action = 
+        {
+          type: "Gestures";
+          gestures: (
+            {
+              direction: "Up";
+              mode: "OnRelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTMETA", "KEY_A"];
+              };
+            },
+            {
+              direction: "Left";
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT", "KEY_LEFT"];
+              };
+            },
+            {
+              direction: "Right";
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT", "KEY_RIGHT"];
+              };
+            },
+            {
+              direction: "None";
+              mode: "OnRelease";
+              action = 
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTMETA"];
+              };
+            }
+          )
+        }
+      }
+    )
+}
+);
+```
+
 - 設定內容的細項說明可參考[Configuration](https://github.com/PixlOne/logiops/wiki/Configuration)
 - 滑鼠按鍵對應的CID可參考[CIDs](https://github.com/PixlOne/logiops/wiki/CIDs)
 
