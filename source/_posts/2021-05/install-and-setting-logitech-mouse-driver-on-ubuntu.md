@@ -333,6 +333,84 @@ devices: (
         }
       }
     )
+},
+{
+  name: "MX Anywhere 3";
+  hiresscroll:
+    {
+        hires: true;
+        invert: false;
+        target: true;
+        up: {
+            mode: "Axis";
+            axis: "REL_WHEEL_HI_RES";
+            axis_multiplier: 3;
+        },
+        down: {
+            mode: "Axis";
+            axis: "REL_WHEEL_HI_RES";
+            axis_multiplier: -3;
+        }
+    };
+    dpi: 1200;
+    buttons: (
+      {
+        cid: 0xc4;
+        action = 
+        {
+          type: "Gestures";
+          gestures: (
+            {
+              direction: "Up";
+              threshold: 7;
+              mode: "OnRelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTMETA",  "KEY_UP"];
+              };
+            },
+            {
+              direction: "Down";
+              threshold: 7;
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTMETA", "KEY_DOWN"];
+              };
+            },
+            {
+              direction: "Left";
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTMETA", "KEY_LEFTALT", "KEY_UP"];
+              };
+            },
+            {
+              direction: "Right";
+              mode: "Onrelease";
+              action =
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTCTRL", "KEY_LEFTALT", "KEY_RIGHT"];
+              };
+            },
+            {
+              direction: "None";
+              mode: "OnRelease";
+              action = 
+              {
+                type: "Keypress";
+                keys: ["KEY_LEFTMETA"];
+              };
+            }
+          )
+        }
+      }
+    )
 }
 );
 ```
