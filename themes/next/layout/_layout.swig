@@ -10,6 +10,10 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-558BV442"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <div class="container{%- if theme.motion.enable %} use-motion{%- endif %}">
     <div class="headband"></div>
 
