@@ -98,3 +98,9 @@ deploy:
   type: git
   repo: git@github.com:shoudevops/shoudevops.github.io.git
   branch: master
+
+nofollow:
+  enable: true
+  exclude: 
+  - hexo.io
+  - theme-next.org
